@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Asteroid Dodger AI</title>
+</head>
+<body>
+    <div class="main-container">
+        <!-- Top section: Game + Neural Network side by side -->
+        <div class="top-section">
+            <div id="gameContainer">
+                <canvas id="gameCanvas"></canvas>
+                <div id="verticalButtons">
+                    <button onclick="save()">💾</button>
+                    <button onclick="discard()">🗑️</button>
+                </div>
+            </div>
+            <div id="neuralContainer">
+                <canvas id="networkCanvas"></canvas>
+            </div>
+        </div>
+        
+        <!-- Bottom section: Performance Chart + Stats below -->
+        <div class="bottom-section">
+            <div id="performanceContainer">
+                <canvas id="performanceCanvas"></canvas>
+            </div>
+            <div id="statsContainer">
+                <canvas id="statsCanvas"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="utils.js"></script>
+    <script src="controls.js"></script>
+    <script src="sensor.js"></script>
+    <script src="network.js"></script>
+    <script src="visualizer.js"></script>
+    <script src="spaceship.js"></script>
+    <script src="asteroid.js"></script>
+    <script src="spaceField.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
